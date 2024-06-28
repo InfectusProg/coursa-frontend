@@ -1,0 +1,387 @@
+.profilePage div{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.profilePage div p{
+  font-size: 24px;
+}
+
+.testingPage {
+  width: 60%;
+  height: auto;
+  margin-top:5vh;
+  display: flex;
+  flex-flow: column nowrap;
+  flex-grow: 1;
+  align-items: center;
+  overflow-y: auto;
+}  
+
+.testingPageContent {
+  width: 100%;
+  padding: 0 0.25rem 0.25rem;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items:center;
+}
+
+.testingPageContent li::before {
+  content: "\200B";
+}
+
+.testingPageContentTitle{
+  text-align: center;
+  margin: 1rem 0;
+}
+
+.testingPageContentTest{
+  width:80%;
+}
+
+.testingPageContentTestContent{
+  width:100%;
+  height:auto;
+  display: flex;
+  flex-flow: column nowrap;
+  margin: 1.5rem .5rem;
+}
+
+.testingPageContentTestContent .answer {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0.5rem 0 0.5rem 0.5rem;
+  margin: 0.25rem 0;
+  background-color: #eee;
+}
+
+.testingPageContentTestContentQuestion{
+  padding: 0.25rem;
+  width:100%;
+}
+
+
+.testingPageContentTestContentQuestion p{
+  width:100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0.5rem 0 0.5rem 0.5rem;
+  margin: 0.25rem 0;
+  background-color: #eee;
+}
+
+.testingPageContentTestContentAnswers{
+  display: flex;
+  flex-flow: row wrap;
+
+}
+
+.testingPageContentTestContentAnswers label{
+  width:95%;
+  display: flex;
+  align-items: center;
+}
+
+.testingPageContentTestContentAnswers button{
+  width:15%;
+  font-size: 24px;
+  padding: 0.25rem ;
+  text-align: center;
+}
+
+.testingPageContentTestContentAnswers input:first-child {
+  margin: 0;
+}
+
+.testingPageContentTestContentAnswers input[type="checkbox"] {
+  text-align: center;
+  width: 2.5rem;
+  width: 48px;
+  min-width: 48px;
+  height: 2.5rem;
+  height: 48px;
+  min-height: 48px;
+  cursor: pointer;
+  margin: 0.5rem;
+}
+
+/* .testingPageContentTestContentAnswers .answer input[type="checkbox"]:focus + label {
+  text-decoration: underline;
+} */
+
+.testingPageContentTestContentAnswers input > label {
+  font-size: 0.75rem;
+  flex-grow: 1;
+}
+
+.testingPageContentTestContentAnswers .answer svg {
+  width: 48px;
+  min-width: 48px;
+  height: 36px;
+  font-size: 1rem;
+  color: steelblue;
+  cursor: pointer;
+}
+
+.testingPageContentTestContentAnswers input svg:focus, 
+.testingPageContentTestContentAnswers input svg:hover {
+  color: red;
+  outline: none;
+}
+
+.testingPageRouting{
+  width:19%;
+  height:90vh;
+  margin: 1rem 0;
+  position: fixed;
+  top:4%;
+  right:0;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.submitScoreBtn{
+  border:none;
+  width:60%;
+  font-size: 24px;
+  padding: 0.25rem ;
+  text-align: center;
+}
+
+.testingPageRoutingLower{
+  width: 90%;
+  height: auto;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-styles {
+  background-color: #001cff;
+  border: none;
+  border-radius: 6px;
+  color: #fff;
+  font-size:16px;
+  margin: 0.25rem;
+  padding: 0.5rem;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.btn-submit{
+  align-self: center;
+}
+
+.route-btn{
+  width: 2em;
+  height: 2em;
+  border: none;
+  margin: 0.25em;
+  font-size: 18px;
+  padding: 0.25rem;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.btn-sent{
+  background: #48ff00;
+}
+
+.btn-not-sent{
+  background: #ff7b00;
+}
+
+.no-display{
+  display: none;
+}
+
+.authForm{
+    width: 25%;
+    margin: 10px auto;
+    padding: 1rem;
+    background: #f4f7f8;
+    border-radius: 8px;
+}
+.authForm p{
+  width: 100%;
+  text-align: center;
+  font-size: 1.6em;
+    margin-bottom: 10px;
+}
+.authForm label {
+  font-size: 1.2em;
+    display: block;
+    margin: 0.5rem; 
+}
+.authForm span{
+  display: block;
+  color:red;
+  font-size: 1em;
+  margin: .25rem .5rem; 
+}
+.authForm input{
+    background: rgba(255,255,255,.1);
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    outline: 0;
+    padding: 0.5rem;
+    width: 100%;
+    box-sizing: border-box; 
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box; 
+    background-color: #e8eeef;
+    color:#8a97a0;
+    -webkit-box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+    box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+    
+}
+.authForm input:focus{
+    background: #d2d9dd;
+}
+.authForm select{
+    -webkit-appearance: menulist-button;
+    height:35px;
+}
+/* .authForm .number {
+    background: mediumblue;
+    color: #fff;
+    height: 30px;
+    width: 30px;
+    display: inline-block;
+    font-size: 0.8em;
+    margin-right: 4px;
+    line-height: 30px;
+    text-align: center;
+    text-shadow: 0 1px 0 rgba(255,255,255,0.2);
+    border-radius: 15px 15px 15px 0px;
+} */
+
+.authForm input[type="submit"],
+.authForm input[type="button"],
+.testRedactorPage input[type="button"],
+.testRedactorPage input[type="submit"]
+{
+    position: relative;
+    display: block;
+    padding: 19px 39px 18px 39px;
+    color: #FFF;
+    margin: 1.5rem auto 0;
+    background: mediumblue;
+    font-size: 1rem;
+    text-align: center;
+    font-style: normal;
+    width: 100%;
+    border: 1px solid mediumblue;
+    border-width: 1px 1px 3px;
+}
+.authForm input[type="submit"]:hover,
+.authForm input[type="button"]:hover,
+.testRedactorPage input[type="button"]:hover,
+.testRedactorPage input[type="submit"]:hover
+{
+    background: mediumblue;
+}
+
+.authForm input[type="submit"]:disabled,
+.authForm input[type="button"]:disabled,
+.testRedactorPage input[type="button"]:disabled,
+.testRedactorPage input[type="submit"]:disabled
+{
+    background: #fff;
+  color:#000;
+  border-color: #000;
+}
+
+.authForm .error {
+  color: red;
+  margin:.5rem;
+}
+
+.testSelectPage{
+  width:60%;
+  height:80vh;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.testSelectPageSelect{
+  width:100%;
+  height:80%;
+  display: flex;
+  flex-flow: column nowrap;
+}
+.testSelectPageSelect div {
+  text-align: center;
+  display: grid;
+  grid-template-columns: 20% 20% 20% 40%;
+}
+.testSelectPageSelectTail {
+  margin:1rem 0;
+  width:100%;
+  height:auto;
+}
+
+.testSelectPageSelectTail h3{
+  display: block;
+  border:none;
+}
+
+.testSelectPageSelectHead h3{
+  display: block;
+  border:1px solid;
+}
+
+.timer{
+  width:90%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.testRedactor{
+  width:60%;
+  height:80vh;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+
+.testRedactorPage{
+  display: flex;
+  flex-flow: column nowrap;
+  width:80%;
+}
+
+.testRedactorPage label{
+  width:95%;
+  display: flex;
+  align-items: center;
+  
+}
+
+.testRedactorPage input {
+  background: rgba(255,255,255,.1);
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  outline: 0;
+  padding: 0.5rem;
+  width: 100%;
+  box-sizing: border-box; 
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box; 
+  background-color: #e8eeef;
+  color:#8a97a0;
+  -webkit-box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+  box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+}

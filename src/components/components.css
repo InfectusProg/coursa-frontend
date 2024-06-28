@@ -1,0 +1,51 @@
+header {
+    width: 100%;
+    height: 5%;
+    margin:0;
+    padding: 0 0.5em;
+    background-color: mediumblue;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+  
+header h1 a{
+  text-decoration: none;
+  color: aliceblue;
+}
+
+nav{
+    height:100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a, nav button{
+    padding: 0.25rem;
+    display: block;
+    background: none;
+    border:none;
+    text-decoration:none;
+    color: aliceblue;
+    cursor: pointer;
+}
+
+nav button{
+    font-size: 24px;
+}
+
+footer {
+    width: 100%;
+    padding: 0.25em;
+    background-color: mediumblue;
+    color: aliceblue;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    display: grid;
+    place-content: center;
+}
